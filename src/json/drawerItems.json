@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Home",
+    "icon": "https://i.ibb.co/r0bBR48/home.png",
+    "redirect": "/"
+  },
+  {
+    "name": "Trabajos Sonoros",
+    "icon": "https://i.ibb.co/qmHmsmK/spectrum.png",
+    "redirect": "/work/work-sound"
+  },
+  {
+    "name": "Trabajos Fotograficos",
+    "icon": "https://i.ibb.co/k8Zcbsf/photo-camera.png",
+    "redirect": "/work/work-photograph"
+  },
+  {
+    "name": "Otros",
+    "icon": "https://i.ibb.co/DzJrrqf/application.png",
+    "redirect": "/work/work-other"
+  },
+  {
+    "name": "About",
+    "icon": "https://i.ibb.co/GMgBnHF/information-button.png",
+    "redirect": "/about"
+  }
+]

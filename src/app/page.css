@@ -1,0 +1,32 @@
+.particles-tk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Coloca el fondo detrás de todo */
+}
+.div-fondo-kt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el fondo detrás de todo */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
+}
+
+.imagen-kt-2{
+    width: 25em;
+    position: absolute;
+    right: 10%;
+    bottom: -10%;
+}
+.imagen-kt-1{
+    width: 25em;
+    position: absolute;
+    left: 10%;
+    top: -5%;
+}
