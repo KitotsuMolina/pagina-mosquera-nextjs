@@ -41,30 +41,3 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-/* Estilo para la etiqueta de audio */
-audio {
-    width: 90%; /* Ajustar al 100% del contenedor */
-    margin:auto
-}
-
-/* Estilo para los controles de audio */
-audio::-webkit-media-controls-panel {
-    background-color: #333; /* Color de fondo de los controles */
-    border-radius: 2px; /* Bordes redondeados para los controles */
-}
-audio::-webkit-media-controls-mute-button{
-    background-color: #fff;
-    border-radius: 10px;
-}
-audio::-webkit-media-controls-play-button{
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-/* Estilo para el texto de error (si no se puede reproducir el audio) */
-audio::after {
-    content: "No se puede reproducir el audio."; /* Texto de error */
-    display: block;
-    color: #f00; /* Color de texto rojo */
-    margin-top: 10px; /* Espaciado superior */
-}

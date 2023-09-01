@@ -1,0 +1,43 @@
+.content-kt{
+    position:relative;
+}
+
+.info-photograph-kt{
+    z-index:1;
+    width: 50em;
+    height: 13em;
+    position: fixed;
+    left: 0%;
+    top: 25%;
+    background-color: whitesmoke;
+    padding: 1em;
+    -webkit-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+}
+.phograph-container{
+    width: 92em;
+    height: 78vh;
+    position: fixed;
+    right: 3%;
+    top: 15%;
+    background-color: whitesmoke;
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.div-list-img-kt{
+    position:absolute;
+    bottom:1em;
+    right:1em;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.img-instagram-kt{
+    position: absolute;
+    width: 10em;
+    bottom: 10em;
+    left: 9em;
+}
