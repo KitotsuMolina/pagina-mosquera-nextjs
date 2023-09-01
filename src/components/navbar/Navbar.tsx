@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <AppBar position="static" className="fixed top-0 w-full" color={"grey"}>
+            <AppBar position="static" className="fixed top-0 w-full" color="default" enableColorOnDark>
                 <Toolbar>
                     <IconButton
                         edge="start"
