@@ -3,8 +3,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from "@/components/navbar/Navbar";
 import React from "react";
-
+import "primereact/resources/themes/lara-light-indigo/theme.css";
 const inter = Inter({ subsets: ['latin'] })
+import 'primereact/resources/primereact.css';
 
 export const metadata: Metadata = {
   title: 'Mosquera',

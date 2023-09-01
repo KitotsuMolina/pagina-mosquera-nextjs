@@ -1,0 +1,70 @@
+.content-kt{
+    position:relative;
+}
+.info-sound-kt{
+    width: 25em;
+    height: 50em;
+    position: absolute;
+    left: -5%;
+    top: -2%;
+    background-color: whitesmoke;
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.sound-kt{
+    width: 60em;
+    height: 90vh;
+    position: fixed;
+    right: 0%;
+    top: 8%;
+    background-color: whitesmoke;
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.carrousel-kt{
+    padding: 2em;
+}
+.p-carousel-item{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Estilo para el contenedor del reproductor de audio */
+.audio-container {
+    width: 100px; /* Ancho del reproductor de audio */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo para la etiqueta de audio */
+audio {
+    width: 90%; /* Ajustar al 100% del contenedor */
+    margin:auto
+}
+
+/* Estilo para los controles de audio */
+audio::-webkit-media-controls-panel {
+    background-color: #333; /* Color de fondo de los controles */
+    border-radius: 2px; /* Bordes redondeados para los controles */
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: #fff;
+    border-radius: 10px;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Estilo para el texto de error (si no se puede reproducir el audio) */
+audio::after {
+    content: "No se puede reproducir el audio."; /* Texto de error */
+    display: block;
+    color: #f00; /* Color de texto rojo */
+    margin-top: 10px; /* Espaciado superior */
+}
