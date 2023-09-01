@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
                     >
                         <Menu />
                     </IconButton>
-                    <ListItemText primary="Bienvenido" />
+                    <ListItemText primary="Joan Sebastian Mosquera" />
                 </Toolbar>
             </AppBar>
             <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
