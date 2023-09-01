@@ -3,8 +3,8 @@
 }
 .info-other-kt{
     z-index: 1;
-    width: 22em;
-    height: 37em;
+    width: 19vw;
+    height: 55vh;
     position: fixed;
     left: 12%;
     bottom: 0%;
@@ -15,13 +15,30 @@
     -moz-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
 }
 .other-container{
-    width: 110em;
+    width: 90%;
     height: 78vh;
     position: fixed;
-    right: 3%;
     top: 15%;
     background-color: whitesmoke;
-    padding-top: 10em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
+}
+.carrousel-kt{
+    padding: 2em;
+    width: 62vw;
+    position: absolute;
+    right: 0em;
+}
+.p-carousel-item{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Estilo para el contenedor del reproductor de audio */
+.audio-container {
+    width: 100px; /* Ancho del reproductor de audio */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }

@@ -28,14 +28,7 @@ const Home: React.FC = () => {
             numScroll: 1
         }
     ];
-    const bull = (
-        <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-        >
-            •
-        </Box>
-    );
+
     const cardTemplate = (item:any) => {
         const urlHTML = { __html: item.url };
         return (
