@@ -22,16 +22,16 @@ const Home: React.FC = () => {
                 <ParticleBackground shapes="triangles"/>
             </div>
             <div className={"info-photograph-kt"}>
-                <Typography variant="h2" className=" text-center" color={"black"}>
+                <p  className="text-center mb-1" style={{color: "black", fontSize:"300%"}}>
                     Trabajos fotográficos
-                </Typography>
-                <Typography variant="h5" className={"text-justify"} color={"black"}>
+                </p>
+                <p className={" "} style={{color: "black", fontSize:"120%"}}>
                     Bienvenido a mi portafolio de trabajos fotográficos. Aquí encontrarás una selección de mis trabajos. Explora mis proyectos para saber más sobre lo que hago.
-                </Typography>
+                </p>
             </div>
             <div className={"phograph-container"}>
                 <div className={"div-list-img-kt"}>
-                    <ImageList sx={{ width: 1000, height: 750,  }} variant="woven" cols={3} gap={8}>
+                    <ImageList sx={{ width: "100%", height: "100%" }} variant="woven" cols={3} gap={8}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                         </ImageListItem>
                     ))}
                 </ImageList></div>
-                <a href="https://www.instagram.com/by_joans/" target={"_blank"}>
+                <a href="https://www.instagram.com/joanphoto07/" target={"_blank"}>
                     <img className={"img-instagram-kt"} src="https://i.ibb.co/nfMVn1Q/instagram.png" alt="instagram"/>
                 </a>
             </div>

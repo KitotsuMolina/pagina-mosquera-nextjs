@@ -4,7 +4,7 @@
 
 .info-photograph-kt{
     z-index:1;
-    width: 50em;
+    width: 50vw;
     height: 13em;
     position: fixed;
     left: 0%;
@@ -16,20 +16,19 @@
     box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
 }
 .phograph-container{
-    width: 92em;
-    height: 78vh;
+    width: 79vw;
+    height: 75vh;
     position: fixed;
     right: 3%;
     top: 15%;
     background-color: whitesmoke;
-    padding-top: 10em;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 .div-list-img-kt{
-    position:absolute;
-    bottom:1em;
-    right:1em;
+    position: absolute;
+    height: 100%;
+    width: 56%;
+    padding: 1em;
+    right: 1em;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -37,7 +36,8 @@
 
 .img-instagram-kt{
     position: absolute;
-    width: 10em;
-    bottom: 10em;
-    left: 9em;
+    width: 10%;
+    height: 20%;
+    bottom: 16%;
+    left: 16%;
 }

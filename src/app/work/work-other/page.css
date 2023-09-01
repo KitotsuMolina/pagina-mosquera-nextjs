@@ -1,0 +1,27 @@
+.content-kt{
+    position:relative;
+}
+.info-other-kt{
+    z-index: 1;
+    width: 22em;
+    height: 37em;
+    position: fixed;
+    left: 12%;
+    bottom: 0%;
+    background-color: whitesmoke;
+    padding: 1em;
+    box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+}
+.other-container{
+    width: 110em;
+    height: 78vh;
+    position: fixed;
+    right: 3%;
+    top: 15%;
+    background-color: whitesmoke;
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}

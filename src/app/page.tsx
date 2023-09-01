@@ -19,10 +19,10 @@ const Home: React.FC = () => {
             <Head>
                 <title>Portafolio de Sebastián Mosquera</title>
             </Head>
-            <Typography variant="h2" className="mb-4">
+            <Typography variant="h2" className="mb-4" color={"white"}>
                 Portafolio de Sebastián Mosquera
             </Typography>
-            <Typography variant="h5" className={"text-center"}>
+            <Typography variant="h5" className={"text-center"} color={"white"}>
                 Se bienvenido a mi portafolio, aquí podrás encontrar trabajos que he realizado en mi proceso como estudiante de Comunicación Social y Periodismo.
             </Typography>
             <div className="div-fondo-kt">

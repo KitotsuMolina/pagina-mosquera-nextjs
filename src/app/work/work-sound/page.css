@@ -3,25 +3,25 @@
 }
 .info-sound-kt{
     width: 25em;
-    height: 50em;
-    position: absolute;
-    left: -5%;
-    top: -2%;
+    height: max-content;
+    position: fixed;
+    left: 20vh;
+    top: 2vw;
     background-color: whitesmoke;
     padding-top: 10em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom:5em;
 }
 .sound-kt{
-    width: 60em;
-    height: 90vh;
+    width: 50vw;
+    height: 85vh;
     position: fixed;
     right: 0%;
-    top: 8%;
+    top: 12vh;
     background-color: whitesmoke;
-    padding-top: 10em;
-    padding-left: 1em;
-    padding-right: 1em;
+    display: grid;
+    place-items: center;
 }
 .carrousel-kt{
     padding: 2em;
