@@ -23,10 +23,10 @@
     padding: 1em;
 }
 .carrousel-kt{
-    padding: 2em;
     width: 62vw;
     position: absolute;
     right: 0em;
+    height: 96%;
 }
 .p-carousel-item{
     display: flex;
@@ -41,4 +41,17 @@
     padding: 10px; /* Espaciado interior */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+.p-carousel-content{
+    height: 100%;
+}
+.p-carousel-container{
+    height: 93%;
+}
+.p-carousel-items-content{
+    height: 84% !important;
+}
+.p-carousel-indicators{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }

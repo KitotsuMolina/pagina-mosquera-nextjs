@@ -1,14 +1,27 @@
 // pages/index.tsx
 'use client'
-import React from 'react';
-import {Container, Typography, Button, ImageList, ImageListItem, Card, CardContent} from '@mui/material';
+import React, {useState} from 'react';
+import {Container, Typography, ImageList, ImageListItem, Card, CardContent} from '@mui/material';
 import './page.css'
 import {Carousel} from "primereact/carousel";
-import sounds from "@/json/soundsInfo.json";
-import itemData from "@/json/imagesInfo.json";
+import other from "@/json/otherInfo.json";
 import ParticleBackground from "@/components/particles/particles";
+import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
 
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
 const Home: React.FC = () => {
+    const [visible, setVisible] = useState(false);
 
     const responsiveOptions = [
         {
@@ -27,13 +40,29 @@ const Home: React.FC = () => {
             numScroll: 1
         }
     ];
+    const ContentExtra = (props:any) =>  {
+        if(props.item.link.status){
+            return (
+                <a style={{color:"blue"}} href={props.item.link.src}>{props.item.link.src}</a>
+            );
+        }else if(props.item.video.status){
+            const urlHTML = { __html: props.item.video.src };
+            return (
+                <div className="card flex justify-content-center">
+                    <Button label="Ver Video" icon="pi pi-external-link" onClick={() => setVisible(true)} />
+                    <Dialog header={props.item.title} visible={visible} modal={false} style={{ width: '67vw', height: '96vh' }} onHide={() => setVisible(false)}>
+                        <div style={{width:"100%", height:"100%"}} dangerouslySetInnerHTML={urlHTML}></div>
+                    </Dialog>
+                </div>
+            );
+        }
+    }
     const cardTemplate = (item:any) => {
-        const urlHTML = { __html: item.url };
         return (
             <Card key={item.index} sx={{ minWidth: 275 }} className={"w-10/12 h-5/6"} >
                 <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                        Trabajo Sonoro
+                        Otros Trabajos
                     </Typography>
                     <Typography sx={{ mb: 1.5 }} color="text.secondary">
                         {item.title}
@@ -41,7 +70,7 @@ const Home: React.FC = () => {
                     <Typography variant="body2" className={"mb-2"}>
                         {item.info}
                     </Typography>
-                    <div dangerouslySetInnerHTML={urlHTML}></div>
+                    <ContentExtra item={item}></ContentExtra>
                 </CardContent>
             </Card>
 
@@ -62,7 +91,7 @@ const Home: React.FC = () => {
                 </p>
             </div>
             <div className={"other-container"}>
-                <Carousel className={"carrousel-kt"} value={sounds} orientation="vertical" numScroll={1} numVisible={1} verticalViewPortHeight="360px" responsiveOptions={responsiveOptions} itemTemplate={cardTemplate} />
+                <Carousel className={"carrousel-kt"} value={other} orientation="vertical" numScroll={1} numVisible={1} verticalViewPortHeight="360px" responsiveOptions={responsiveOptions} itemTemplate={cardTemplate} style={{ height: "96%" }}/>
             </div>
         </Container>
     );
