@@ -91,7 +91,7 @@ const Home: React.FC = () => {
                 </p>
             </div>
             <div className={"other-container"}>
-                <Carousel className={"carrousel-kt"} value={other} orientation="vertical" numScroll={1} numVisible={1} verticalViewPortHeight="360px" responsiveOptions={responsiveOptions} itemTemplate={cardTemplate} style={{ height: "96%" }}/>
+                <Carousel className={"carrousel-kt"} value={other} orientation="vertical" numScroll={1} numVisible={1} verticalViewPortHeight="84%!important" responsiveOptions={responsiveOptions} itemTemplate={cardTemplate} style={{ height: "96%" }}/>
             </div>
         </Container>
     );
